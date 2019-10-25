@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+.header-bar {
+    background-color: #682e23 !important;
+    height: 6rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF; 
+    
+}
+
+.footer {
+    background-color:#1b1b1b;
+}
