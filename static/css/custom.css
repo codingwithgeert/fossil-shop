@@ -1,17 +1,45 @@
-body{
+body {
     background-color: black;
+     margin: 0;
+    height: 100%;
 }
+
 
 .header-bar {
     background-color: #682e23 !important;
     height: 6rem;
 }
 
-.navbar-light .navbar-nav .nav-link {
+/*.navbar-light .navbar-nav .nav-link {
     color: #FFFFFF; 
     
-}
+}*/
 
 .footer {
-    background-color:#1b1b1b;
+    background-color: #1b1b1b;
 }
+
+.home {
+    display: none;
+}
+
+.social {
+    display: none;
+}
+
+.jumbotron {
+    margin-top: 2rem;
+    background-image: url(https://cff2.earth.com/uploads/2018/01/22182124/The-science-and-art-of-recovering-and-preparing-fossils-.jpg);
+}
+
+.card {
+    width: 13rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+
+.pt-4{
+    width:100%;
+    background-color: limegreen;
+}
+
