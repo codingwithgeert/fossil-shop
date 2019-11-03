@@ -26,10 +26,9 @@ from home.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^$', all_products, name='index'),
+    re_path(r'^$', index, name='index'),
     re_path(r'^products/', include(urls_products)),
     re_path('accounts/', include(urls_accounts)),
     re_path(r'^cart/', include(urls_cart)),
     re_path(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
-    path('index/', index, name='index'),
 ]
