@@ -1,6 +1,6 @@
-from django.conf.urls import url, include
+from django.conf.urls import re_path, include
 from .views import all_products
 
 urlpatterns = [
-    url(r'^$', all_products, name='products'),
+    re_path(r'^$', all_products, name='products'),
 ]
