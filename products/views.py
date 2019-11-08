@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import Ammonites
+from .models import Product
 
 # Create your views here.
-def all_ammonites(request):
-    products = Ammonites.objects.all()
+def all_products(request):
+    products = Product.objects.all()
     return render(request, "fossils.html", {"products": products})
