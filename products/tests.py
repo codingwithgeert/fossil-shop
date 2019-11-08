@@ -10,5 +10,5 @@ class ProductTests(TestCase):
     """
 
     def test_str(self):
-        test_title = Product(title='A product')
-        self.assertEqual(str(test_title), 'A product')
+        test_name = Product(name='A product')
+        self.assertEqual(str(test_name), 'A product')
