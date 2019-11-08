@@ -18,7 +18,7 @@ from django.urls import path, reverse, include, re_path
 from accounts import urls as urls_accounts
 from products import urls as urls_products
 from cart import urls as urls_cart
-from products.views import all_ammonites
+from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
 from home.views import index
