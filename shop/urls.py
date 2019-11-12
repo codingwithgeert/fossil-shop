@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, reverse, include, re_path
 from accounts import urls as urls_accounts
-from products import urls as urls_products
+from products import urls as urls_ammonites
 from cart import urls as urls_cart
 from products.views import all_products
 #from django.views import static#
@@ -29,7 +29,7 @@ from home.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^$', index, name='index'),
-    re_path(r'^products/', include(urls_products)),
+    re_path(r'^ammonites/', include(urls_ammonites)),
     re_path('accounts/', include(urls_accounts)),
     re_path(r'^cart/', include(urls_cart)),
     #re_path(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),#
