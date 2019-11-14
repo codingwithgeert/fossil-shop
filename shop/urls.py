@@ -19,11 +19,13 @@ from accounts import urls as urls_accounts
 from products import urls as urls_ammonites
 from cart import urls as urls_cart
 from products.views import all_products
-#from django.views import static#
-from django.conf.urls.static import static
-#from .settings import MEDIA_ROOT#
+from django.views import static
+from django.conf.urls.static import static, serve
+
+from .settings import MEDIA_ROOT
 from django.conf import settings
 from home.views import index
+
 
 
 urlpatterns = [
@@ -32,9 +34,5 @@ urlpatterns = [
     path('ammonites/', include(urls_ammonites)),
     path('accounts/', include(urls_accounts)),
     path('cart/', include(urls_cart)),
-    #re_path(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
+    re_path(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
