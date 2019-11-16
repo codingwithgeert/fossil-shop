@@ -1,15 +1,28 @@
 {% extends 'base.html' %} {% block content %}
 <!-- Jumbotron with lead text -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <div class="jumbotron ">
-        <h1 class="display-5">Fossils</h1>
-        <p class="lead">discount</p>
-      </div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1573832035811-8cd5da029884?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1543349823-729e19b44e31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1573817287997-59e90a7b2cb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
     <!-- end col -->
-    <h1>The Fossils Shop</h1>
+    <h1 class ="home-header"><strong>The Fossils Shop</strong></h1>
     <h2>Treasures from all over the world.</h2>
   </div>
   <!-- end row-->
@@ -17,8 +30,8 @@
   <div class="container">
     <div class="row">
       <div class="col col-sm-4">
-        <div class="card" style="width: 10rem;">
-          <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" class="card-img-top" alt="...">
+        <div class="card " style="width: 10rem;">
+          <img src="https://images.unsplash.com/photo-1511370727486-ef2f0c456710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top"  alt="...">
           <div class="card-body">
             <p class="card-text">Ammonite</p>
           </div>
@@ -26,7 +39,7 @@
       </div>
       <div class="col col-sm-4">
         <div class="card" style="width: 10rem;">
-          <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" class="card-img-top" alt="...">
+          <img src="https://images.unsplash.com/photo-1456409203138-4bec77b9a897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="cardtext">Trilobites</p>
           </div>
@@ -34,9 +47,9 @@
       </div>
       <div class="col col-sm-4">
         <div class="card" style="width: 10rem;">
-          <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png" class="card-img-top" alt="...">
+          <img src="https://images.unsplash.com/photo-1570482606740-a0b0baa0e58d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="cardtext">Trilobites</p>
+            <p class="cardtext">Other</p>
           </div>
         </div>
       </div>
