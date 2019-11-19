@@ -39,7 +39,7 @@ h2 {
 }
 
 .footer {
-    background-color: #1b1b1b;
+    background-color: #E2D0BE;
 }
 
 .home {
@@ -63,5 +63,10 @@ h2 {
 
 .pt-4 {
     width: 100%;
-    background-color: limegreen;
+    background-color: #E2D0BE;
+}
+
+.im-trophy:before, .im-globe:before, .im-timer:before {
+    color: #E1B07E;
+    
 }
