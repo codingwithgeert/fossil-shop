@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<!-- Jumbotron with lead text -->
+<!-- Carousel -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -21,40 +21,69 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-    <!-- end col -->
-    <h1 class ="home-header"><strong>The Fossils Shop</strong></h1>
-    <h2>Treasures from all over the world.</h2>
-  </div>
-  <!-- end row-->
-  <!-- start container -->
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-4">
-        <div class="card " style="width: 10rem;">
-          <img src="https://images.unsplash.com/photo-1511370727486-ef2f0c456710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top"  alt="...">
-          <div class="card-body">
-            <p class="card-text">Ammonite</p>
-          </div>
+<!-- end col -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="container py-2">
+
+        <!-- Header and intro -->
+        <div class="row">
+          <header id="home-header" class="col-12 text-center">
+            <h1>The Fossils Shop</h1>
+            <h2>Treasures from all over the world.</h2>
+            <hr>
+            <div class="icon-box-wrapper">
+              <div class="icon-box">
+                <i class="im im-trophy"></i>
+                <p>The Best Quality</p>
+              </div>
+              <div class="icon-box">
+                <i class="im im-globe"></i>
+                <p>Shipping Worldwide</p>
+              </div>
+            </div>
+            <div class="icon-box-wrapper">
+              <div class="icon-box">
+                <i class="im im-timer"></i>
+                <p>Fast Delivery</p>
+              </div>
+            </div>
+          </header>
         </div>
-      </div>
-      <div class="col col-sm-4">
-        <div class="card" style="width: 10rem;">
-          <img src="https://images.unsplash.com/photo-1456409203138-4bec77b9a897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="cardtext">Trilobites</p>
+        <!-- end row-->
+        <!-- start container -->
+        <div class="container">
+          <div class="row">
+            <div class="col col-sm-4">
+              <div class="card " style="width: 10rem;">
+                <img src="https://images.unsplash.com/photo-1511370727486-ef2f0c456710?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="{% url 'fossils' %}">
+                    <p class="card-text">Ammonite</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-4">
+              <div class="card" style="width: 10rem;">
+                <img src="https://images.unsplash.com/photo-1456409203138-4bec77b9a897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="cardtext">Trilobites</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-4">
+              <div class="card" style="width: 10rem;">
+                <img src="https://images.unsplash.com/photo-1570482606740-a0b0baa0e58d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="cardtext">Other</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- end of row -->
         </div>
-      </div>
-      <div class="col col-sm-4">
-        <div class="card" style="width: 10rem;">
-          <img src="https://images.unsplash.com/photo-1570482606740-a0b0baa0e58d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="cardtext">Other</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of row -->
-  </div>
-  <!-- end container -->
-  {% endblock %}
+        <!-- end container -->
+        {% endblock %}
